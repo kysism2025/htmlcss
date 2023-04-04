@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../CPPProject"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "html-css-workspace"
+	}
+}

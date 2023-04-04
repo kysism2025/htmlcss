@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Insert title here</title>
+        <!--
+        <style type-="text/css">
+            #personalInfo,#address,#jumon{
+                //background-color: #cfff00;
+            }
+            form fieldset{
+                margin-bottom: 25px;
+            }
+            form legend{
+                font-size: 15px;   
+            }
+            form label.reg{
+                color:#390;
+                width:110px;
+                font-size: 14px;
+                font-weight:bold;
+                float:left;
+                text-align: right;
+                margin-right: 10px;
+            }
+            form label.reg2{
+                width:110px;
+                font-size: 14px;
+                font-weight:bold;
+                float:left;
+                text-align: right;
+                margin-right: 10px;
+            }            
+            form ul li{
+                list-style: none;
+                margin: 15px 0;
+                font-size: 14px;
+            }
+        </style>
+    -->
+        <link rel="stylesheet" type="text/css" href="css/css_test.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>상품 주문서</h1>
+            <form>
+                <fieldset id="personalInfo">
+                    <legend>개인 정보</legend>
+                    <ul>
+                        <li>
+                            <label for="uname" class="title">이름</label>
+                            <input type="text" id="uname" value="" placeholder="여백없이 입력" required>
+                        </li>
+                        <li>
+                            <label for="tel" class="title">연락처</label>
+                            <input type="text" id="tel" value="" placeholder="연락가능한 번호">
+                        </li>                
+                    </ul>
+                </fieldset>
+                <fieldset id="address">
+                    <legend>배송지 정보</legend>
+                    <ul>
+                        <li>
+                            <label for="uaddress" class="title">주소</label>
+                            <input type="text" id="uaddress" required title="주소">
+                        </li>
+                        <li>
+                            <label for="utel" class="title">전화번호</label>
+                            <input type="text" id="utel" value="" title="전화번호" required>
+                        </li>
+                        <li>
+                            <label for="umemo" class="title">메모</label>
+                            <textarea id="umemo" row="3" col="40" title="메모"></textarea>
+                        </li>                                
+                    </ul>
+                </fieldset>
+                <fieldset id="jumon">
+                    <legend>교재주문</legend>
+                    <ul>
+                        <li>
+                            <label for="guataetxt" class="title2"><input type="checkbox" id="guatae" checked>과테말라 안티구이 (100g)</label>
+                            <input type="number" id="guataetxt" size="10" value="1" min="1" min="3">개
+                        </li>
+                        <li>
+                            <label for="indonesiatxt" class="title2"><input type="checkbox" id="indonesia" checked>인도네시아 만델링 (100g)</label>
+                            <input type="number" id="indonesiatxt" value="2" min="1" min="3">개
+                        </li>
+                        <li>
+                            <label for="tamlatxt" class="title2"><input type="checkbox" id="tamla" checked>탐라는도다 (100g)</label>
+                            <input type="number" id="tamlatxt" value="3" min="1" min="3">개
+                        </li>                                
+                    </ul>
+                </fieldset>    
+
+            </form>  
+        </div>
+        <div class="centered">
+            <form>
+            <fieldset>
+                <ul>
+                    <li>
+                        <input type="submit" value="주문하기">
+                        <input type="reset" value="다시작성">
+                    </li>
+                </ul>
+            </fieldset> 
+            </form>   
+        </div>
+    </body>
+</html>

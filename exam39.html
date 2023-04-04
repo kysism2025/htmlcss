@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Insert title here</title>
+        <style type-="text/css">
+            h1{
+                text-align: center;
+            }
+            div.container{
+                width:600px;
+                margin:0 auto;
+            }
+            div.centered{
+                width:600px;
+                text-align: center;
+                margin:0 auto;
+                align-self: center;
+            }            
+            body{
+                background-color: aliceblue;
+            }
+            form fieldset{
+                margin-bottom: 25px;
+                width:100%;
+            }
+            p.inline{
+                display: inline-block;
+            }
+            form legend{
+                font-size: 15px;   
+            }
+            form label em{
+                font-size: 15;
+                color:red;
+                font-weight:800;
+            }
+            form label.reg2{
+                color:#390;
+                width:80px;
+                font-size: 14px;
+                font-weight:bold;
+                float:left;
+                text-align: right;
+                margin-right: 10px;
+            }   
+            form label.reg{
+                color:#390;
+                width:110px;
+                font-size: 14px;
+                font-weight:bold;
+                float:left;
+                text-align: right;
+                margin-right: 10px;
+            }    
+            form ul li{
+                list-style: none;
+                margin: 15px 0;
+                font-size: 14px;
+            }
+
+            fieldset.sendform ul li{
+                list-style: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <form>
+            <fieldset>
+                <legend>로그인</legend>
+                
+                <label for="uid" class="reg2">아이디</label>
+                <input type="text" id="uid" size="10" autofocus title="아이디를 입력하세요">
+                
+                <label for="upwd" class="reg2">비밀번호</label>
+                <input type="text" id="upwd" size="10" value="" title="비밀번호를 입력하세요">
+
+                <input type="submit" value="로그인">
+
+            </fieldset>
+            <fieldset>
+                <legend>가입하기</legend>
+                <ul>
+                    <li>
+                        <label for="id" class="reg">아이디<em>*</em></label>
+                        <input type="text" id="id" required title="아이디를 입력하세요">&nbsp;
+                    </li>
+                    <li>
+                        <label for="pwd" class="reg">비밀번호<em>*</em></label>
+                        <input type="password" id="pwd"  required title="비밀번호를 입력하세요">&nbsp;
+                    </li>
+                    <li>
+                        <label for="pwd2" class="reg">비밀번호 확인<em>*</em></label>
+                        <input type="password" id="pwd2"  required title="비밀번호를 입력하세요">&nbsp;
+                    </li>
+                    <li>
+                        <label for="name" class="reg">이름<em>*</em></label>
+                        <input type="text" id="name"  required title="이름을 입력하세요">&nbsp;
+                    </li>
+                    <li>
+                        <label for="email" class="reg">메일주소<em>*</em></label>
+                        <input type="email" id="email" required title="이메일을 입력하세요">&nbsp;
+                    </li>
+                    <li>
+                        <label for="uid" class="reg">전화번호</label>
+                        <input type="tel" id="uid" title="전화번호를 입력하세요">&nbsp;
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="easy">
+                <legend>미래테크</legend>
+                <ul>
+                    <li>
+                        <textarea row="80" col="5">
+                            미래테 크미래테크 미래테크 미래테크미 래테크미래테크
+                            미래테 크미래테 크미래테크 미래테크
+                            미래테크미래테 크미래테크       
+                        </textarea>
+                    </li>
+                </ul>
+            </fieldset>
+        </div>
+        <fieldset class="sendform">
+            <ul>
+                <li>
+                    <input type="submit" value="가입하기">
+                    <input type="reset" value="다시쓰기">
+                </li>
+            </ul>
+        </fieldset> 
+    </body>
+</html>
+
